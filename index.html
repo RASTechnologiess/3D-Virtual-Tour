@@ -1,6 +1,26 @@
 <html>
+  <head>
+    <style>
+      .sketchfab-embed-wrapper {
+        position: relative;
+      }
+
+      .sketchfab-embed-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 95%;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background-color: red;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+    </style>
+  </head>
   <body>
     <div class="sketchfab-embed-wrapper"> 
-      <iframe id="model" title="" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a6f35056f7cb46f9a06f3aba50b9042d/embed"  width="1000" height="500">  </iframe> 
+      <iframe id="model" title="" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/a6f35056f7cb46f9a06f3aba50b9042d/embed" width="1200" height="600"></iframe> 
+    </div>
   </body>
 </html>

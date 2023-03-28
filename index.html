@@ -1,124 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
     <style>
-      .sketchfab-embed-wrapper::before {
-        content: "";
-        position: absolute;
-        top: 96%;
-        left: 0;
-        height: 45px;
-        background-color: black;
-        transform: translateY(-50%);
-        z-index: 1;
-      }
-
-      .annotation {
-        font-family: Georgia, serif;
-        position: absolute;
-        background-color: white;
-        padding: 6px;
-        font-size: 16px;
-        font-weight: bold;
-        z-index: 1.5;
+      #container {
         display: flex;
+        justify-content: center;
         align-items: center;
-      }
-
-      .top-left {
-        padding:8px;
-        top: 15px;
-        left: 15px;
-      }
-
-      .bottom-left {
-        padding: 28px;
-        background-color: white;
-        bottom: 0%;
-        left: 15px;
-      }
-
-      .bullet-list {
-        font-family: Georgia,serif;
-        margin-top: 6px;
-        margin-left: 12px;
-        font-size: 11px;
-      }
-
-      .bullet-list li {
-        list-style-type: disc;
-        margin-bottom: 5px;
-      }
-
-      .bullet-list img {
-        width: 40px;
-        height: 40px;
-        margin-right: 9px;
-      }
-
-      .bottom-right {
-        background-color: white;
-        bottom: 0%;
-        right: 15px;
-      }
-
-      .bullet-list {
-        font-family: Georgia,serif;
-        margin-top: 6px;
-        margin-left: 12px;
-        font-size: 11px;
-      }
-
-      .bullet-list li {
-        list-style-type: disc;
-        margin-bottom: 5px;
-      }
-
-      .bullet-list img {
-        width: 40px;
-        height: 40px;
-        margin-right: 9px;
+        height: 100vh;
       }
     </style>
   </head>
   <body>
-    <div class="sketchfab-embed-wrapper"> 
-      <div class="annotation top-left">
-        <img src="img.png" width=100px height="100px">
-        <div>
-          <div>Closest Landmarks</div>
-          <ul class="bullet-list">
-            <li>Westbourne Park &nbsp ~0.5 km</li>
-            <li>Hyde Park  &nbsp ~2.6km</li>
-            <li>Central London  &nbsp ~5km</li>
-            <li>London Heathrow Airport &nbsp ~18.7 km</li>
-          </ul>
-        </div>
-      </div>
-      <div class="annotation bottom-left">
-        <img src="img3.png" width=85px height="85px">
-        <div>
-          <div>Facilities</div>
-          <ul class="bullet-list">
-            <li>Luggage storage</li>
-            <li>Non-smoking and Soundproof rooms </li>
-            <li>Cleaning Services</li>
-            <li>Free WiFi</li>
-          </ul>
-        </div>
-      </div>
-      <div class="annotation bottom-right">
-        <img src="img4.png" width=70px height="70px">
-        <div>
-          <div>Contact</div>
-          <ul class="bullet-list">
-            <li>380 Harrow Road</li>
-            <li>London, UK</li>
-            <li>+44 140 643 1145</li>
-            <li>contact@hotel.com</li>
-          </ul>
-        </div>
-      </div>
-      <iframe id="model" title="" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/6937bcf56e844cb4b22c0ace15bfe148/embed" width="1185" height="580"></iframe> 
+    <div id="container">
+      <iframe id="model" title="" frameborder="0" allowfullscreen="true" mozallowfullscreen="tru" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/6937bcf56e844cb4b22c0ace15bfe148/embed" width="1185" height="580"></iframe>
     </div>
   </body>
 </html>
